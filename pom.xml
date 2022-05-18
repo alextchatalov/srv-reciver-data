@@ -12,7 +12,7 @@
 	<artifactId>receiver.data</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>receiver.data</name>
-	<description>Service Receiver Data Equipament From Clients</description>
+	<description>Service Receiver Data Equipment From Clients</description>
 	<properties>
 		<java.version>11</java.version>
 		<kotlin.version>1.6.21</kotlin.version>
