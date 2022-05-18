@@ -4,9 +4,9 @@ import br.com.srv.receiver.data.core.model.ReceiverEquipment
 import org.springframework.stereotype.Controller
 
 @Controller
-class ReceiverEquipmentUseCase(val persistEquipment:PersistEquipment) {
+class ReceiverEquipmentUseCase(val persistEquipmentBoundary:PersistEquipmentBoundary) {
 
     fun execute(equipment: ReceiverEquipment) {
-        persistEquipment.execute(equipment)
+        persistEquipmentBoundary.execute(equipment)
     }
 }

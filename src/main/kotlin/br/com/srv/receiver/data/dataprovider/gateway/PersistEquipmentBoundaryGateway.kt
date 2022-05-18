@@ -1,14 +1,14 @@
 package br.com.srv.receiver.data.dataprovider.gateway
 
 import br.com.srv.receiver.data.core.model.ReceiverEquipment
-import br.com.srv.receiver.data.core.usercase.PersistEquipment
+import br.com.srv.receiver.data.core.usercase.PersistEquipmentBoundary
 import br.com.srv.receiver.data.dataprovider.entity.EquipmentEntity
 import br.com.srv.receiver.data.dataprovider.mapper.ReceiverEquipmentToEquipmentEntityMapper
 import br.com.srv.receiver.data.dataprovider.repository.EquipmentRepository
 import org.springframework.stereotype.Controller
 
 @Controller
-class PersistEquipmentGateway : PersistEquipment {
+class PersistEquipmentBoundaryGateway : PersistEquipmentBoundary {
 
 
     lateinit var repository: EquipmentRepository

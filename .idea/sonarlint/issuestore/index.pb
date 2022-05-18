@@ -7,8 +7,6 @@ g
 7src/main/kotlin/br/com/srv/receiver/data/Application.kt,5/f/5f7fe72e425744cb260ba37b5e08f7521ac87087
 ‡
 Wsrc/main/kotlin/br/com/srv/receiver/data/entrypoint/request/ReceiverEquipmentRequest.kt,c/6/c6e766aaafb227215ec4663aa257c2eb3a0ce31e
-x
-Hsrc/main/kotlin/br/com/srv/receiver/data/core/model/ReceiverEquipment.kt,6/7/67e08fe848e7b55666ae5c6aac7ed5bd148e70d4
 ˜
 hsrc/main/kotlin/br/com/srv/receiver/data/dataprovider/mapper/ReceiverEquipmentToEquipmentEntityMapper.kt,9/8/98f89ac69aac10e4dee1fbf4dcda7ae890f2f1c6
 Ÿ
@@ -19,9 +17,5 @@ Wsrc/main/kotlin/br/com/srv/receiver/data/dataprovider/repository/EquipmentRepos
 Osrc/main/kotlin/br/com/srv/receiver/data/dataprovider/entity/EquipmentEntity.kt,1/1/1165e128ccc681f3dcdd0f9fe20e73668162dc02
 ‰
 Ysrc/main/kotlin/br/com/srv/receiver/data/entrypoint/resource/ReceiverEquipmentResource.kt,d/b/dbdee869d737f695fdf25a839ca62b68aface9b4
-‚
-Rsrc/main/kotlin/br/com/srv/receiver/data/core/usercase/ReceiverEquipmentUseCase.kt,2/5/25121980ff5b79f162855d22fcb4c5673494f0a5
-z
-Jsrc/main/kotlin/br/com/srv/receiver/data/core/usercase/PersistEquipment.kt,5/5/556f3ff989d44974a634bf78eb956b61d41a6cd6
 ˆ
 Xsrc/main/kotlin/br/com/srv/receiver/data/dataprovider/gateway/PersistEquipmentGateway.kt,b/4/b4d42339de771b5c9588861ba4a7f6f812c980d7
