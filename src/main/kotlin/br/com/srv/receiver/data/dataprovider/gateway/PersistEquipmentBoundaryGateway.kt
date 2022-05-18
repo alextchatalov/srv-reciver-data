@@ -15,10 +15,10 @@ class PersistEquipmentBoundaryGateway : PersistEquipmentBoundary {
 
     var database: MutableList<EquipmentEntity> = mutableListOf()
 
-    override fun execute(equipment: ReceiverEquipment) {
-        val equipmentEntity = ReceiverEquipmentToEquipmentEntityMapper.convert(equipment)
+    override fun execute(equipments: List<ReceiverEquipment>) {
+        val equipmentsEntity = equipments.map { ReceiverEquipmentToEquipmentEntityMapper.convert(it) }.toList()
         //val equipmentEntitySaved = repository.save(equipmentEntity)
-        database.add(equipmentEntity)
-        print("Register in database: ${database.size} \n")
+        database.addAll(equipmentsEntity)
+        print("Save list of register in database: $database \n")
     }
 }

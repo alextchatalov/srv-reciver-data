@@ -17,10 +17,10 @@ class ReceiverEquipmentResource() {
     lateinit var receiverEquipmentUseCase: ReceiverEquipmentUseCase
 
     @PostMapping("/receiver")
-    fun receiver(@RequestBody equipment: ReceiverEquipmentRequest): ResponseEntity<Void> {
+    fun receiver(@RequestBody equipments: List<ReceiverEquipmentRequest>): ResponseEntity<Void> {
 
-        val equipmentConverted = ReceiverEquipmentRequestToReceiverEquipmentMapper.convert(equipment)
-        receiverEquipmentUseCase.execute(equipmentConverted)
+        val equipmentsConverted = equipments.map { ReceiverEquipmentRequestToReceiverEquipmentMapper.convert(it) }.toList()
+        receiverEquipmentUseCase.execute(equipmentsConverted)
 
         return ResponseEntity<Void>(HttpStatus.CREATED)
     }
