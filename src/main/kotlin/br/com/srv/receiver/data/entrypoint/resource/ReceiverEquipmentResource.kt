@@ -18,7 +18,7 @@ class ReceiverEquipmentResource() {
 
     @PostMapping("/receiver")
     fun receiver(@RequestBody equipments: List<ReceiverEquipmentRequest>): ResponseEntity<Void> {
-
+        print("Receiving Data...")
         val equipmentsConverted = equipments.map { ReceiverEquipmentRequestToReceiverEquipmentMapper.convert(it) }.toList()
         receiverEquipmentUseCase.execute(equipmentsConverted)
 
