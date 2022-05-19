@@ -6,12 +6,14 @@ import br.com.srv.receiver.data.dataprovider.entity.EquipmentEntity
 import br.com.srv.receiver.data.dataprovider.mapper.ReceiverEquipmentToEquipmentEntityMapper
 import br.com.srv.receiver.data.dataprovider.repository.EquipmentRepository
 import org.springframework.stereotype.Controller
+import mu.KotlinLogging
 
 @Controller
 class PersistEquipmentBoundaryGateway : PersistEquipmentBoundary {
 
 
     lateinit var repository: EquipmentRepository
+    private val logger = KotlinLogging.logger {}
 
     var database: MutableList<EquipmentEntity> = mutableListOf()
 
@@ -19,6 +21,6 @@ class PersistEquipmentBoundaryGateway : PersistEquipmentBoundary {
         val equipmentsEntity = equipments.map { ReceiverEquipmentToEquipmentEntityMapper.convert(it) }.toList()
         //val equipmentEntitySaved = repository.save(equipmentEntity)
         database.addAll(equipmentsEntity)
-        print("Save list of register in database: $database \n")
+        logger.info { "Save list of register in database: $database \n" }
     }
 }

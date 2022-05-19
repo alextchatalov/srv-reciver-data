@@ -13,5 +13,3 @@ osrc/main/kotlin/br/com/srv/receiver/data/entrypoint/mapper/ReceiverEquipmentReq
 Wsrc/main/kotlin/br/com/srv/receiver/data/dataprovider/repository/EquipmentRepository.kt,9/2/92c2b0830ea02a936619d7c7e605534c192c633d
 
 Osrc/main/kotlin/br/com/srv/receiver/data/dataprovider/entity/EquipmentEntity.kt,1/1/1165e128ccc681f3dcdd0f9fe20e73668162dc02
-ˆ
-Xsrc/main/kotlin/br/com/srv/receiver/data/dataprovider/gateway/PersistEquipmentGateway.kt,b/4/b4d42339de771b5c9588861ba4a7f6f812c980d7
